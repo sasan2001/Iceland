@@ -1,0 +1,395 @@
+/* Universal Styles */
+*{
+    font-family: 'poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Section Backgrounds */
+#about{
+    background: url(Pics/iceland\ \(50\).JPG);
+    background-size: cover;
+    background-position: center;
+}
+#music{
+    background: url(Pics/live\ \(8\).JPG);
+    background-size: cover;
+    background-position: center;
+}
+#package{
+    background: url(Pics/iceland\ \(36\).JPG);
+    background-size: cover;
+    background-position: center;
+}
+#form{
+    background: url(Pics/iceland\ \(50\).JPG);
+    background-size: cover;
+    background-position: center;
+}
+#heroo{
+    background: url(Pics/live\ \(6\).JPG);
+    background-size: cover;
+    background-position: center;
+}
+#hero{
+    background: url(Pics/live\ \(3\).JPG);
+    background-size: cover;
+    background-position: center;
+}
+/* Root Variables */
+:root{
+    --main-color: rgb(13, 42, 59);
+    --black: #222;
+    --white: #fff;
+    --light-black: #777;
+    --light-white: #fff9;
+    --dark-bg: rgba(0, 0, 0, .7);
+    --light-bg: #eee;
+    --border: .1rem solid var(var(--black));
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --text-shadow: 0 1.5rem 1rem rgba(0, 0, 0, .3);
+}
+/* HTML Styles */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+/* Scrollbar Styles */
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: var(--white);
+}
+html::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+/* Section Styles */
+section{
+    padding: 5rem 10%;
+}
+/* Header Styles */
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background-color: var(--white);
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111;
+}
+.header .logo{
+    font-size: 2.5rem;
+}
+.header .navbar{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: white;  
+}
+.header .navbar a:hover{
+    color: white;
+}
+.header .navbar a{
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 15px;
+}
+/* Home Style */
+.home{
+    padding: 0;
+}
+/* Home Slide Styles */
+.home .slide{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 60rem;
+}
+
+.home .slide .content{
+    width: 85rem;
+    display: none;
+}
+.home .swiper-slide-active .content{
+    display: inline-block;
+}
+.home .slide .content span{
+    display: block;
+    font-size: 2.2rem;
+    color: #fff;
+    padding-bottom: 1rem;
+    animation:fadeIn .2s linear backwards .2s;
+}
+
+.home .slide .content  h3{
+    font-size: 6vw;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: var(--text-shadow);
+    padding: 1rem 0;
+    animation:fadeIn .2s linear backwards .4s;
+}
+.home .slide .content .btn{
+    animation:fadeIn .2s linear backwards .6s;
+}
+/* Swiper Button Styles */
+.home .swiper-button-next,
+.home .swiper-button-prev{
+    top: inherit;
+    left: inherit;
+    bottom: 0;
+    right: 0;
+    height: 7rem;
+    width: 7rem;
+    background: #111;
+    color: #fff;
+}
+.home .swiper-button-next:hover,
+.home .swiper-button-prev:hover{
+    background: #fff;
+    color: #111;
+    
+}
+.home .swiper-button-next::after,
+.home .swiper-button-prev::after{
+    font-size: 2rem;
+}
+.home .swiper-button-prev{
+    right: 7rem;
+}
+/* Button Styles */
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: #111;
+    color: #fff;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size:100%;
+    text-decoration: none;
+}
+.btn:hover{
+    background: #fff;
+}
+/* FadeIn Animation */
+@keyframes fadeIn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* Footer Styles */
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+/* Responsive Footer Styles */
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+/* Home About Section */
+.home-about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.home-about .image{
+    flex: 1 1 41rem;
+}
+.home-about .image img{
+    width: 70%;
+}
+.home-about .content{
+    flex: 1 1 41rem;
+    padding: 3rem;
+    background: #111
+}
+.home-about .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+.home-about .content p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+    color: #fff;
+}
+/* Heading Title */
+.heading-title{
+    text-align: center;
+}
+/* Home Packages Section */
+.home-packages{
+    background: var(--light-bg);
+}
+.home-packages.box-container.box{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: #222;
+}
+.home-packages .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+.home-packages .box-container .box .image{
+    height: 45rem;
+    overflow: hidden;
+}
+.home-packages .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.home-packages .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+
+}
+.home-packages .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #fff;
+}
+/* Heading 1 */
+h1 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: #000;
+  font-size: 4vw;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 1.5rem;
+}
+/* Text */
+.text {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Booking Form */
+.booking .book-form{
+    padding: 2rem;
+    background: rgba(56, 54, 54, 0.434);
+}
+.booking .book-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.booking .book-form .inputBox{
+    flex: 1 1 41rem;
+}
+
+.booking .book-form .flex .inputBox input{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: var(--light-black);
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+.booking .book-form .flex .inputBox input:focus{
+    background: #000;
+    color: #fff;
+}
+.booking .book-form .flex .inputBox input::placeholder{
+    color: var(--light-white);
+}
+.booking .book-form .flex span{
+    font-size: 2rem;
+    color: #fff;
+}
+.booking .book-form .btn{
+    margin-top: 2rem;
+}
+

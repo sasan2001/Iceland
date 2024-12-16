@@ -1,0 +1,65 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Universal Styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  
+}
+/* Body Styling */
+body {
+  color: #333;
+  display: grid;
+  max-width: 100%;
+  place-items: center;
+  background: url(Pics/iceland\ \(36\).JPG);
+  background-size: cover;
+  background-position: center;
+  
+  
+}
+/* Heading Styles */
+h2 {
+  margin: 0;
+  color: #000;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-top: 5rem;
+}
+/* Form Styling */
+form{
+  width: 45%;
+}
+/* Label Styling */
+form label{
+  font-size: 1.2rem;
+}
+/* Input, Textarea, Button Styling */
+input, textarea, button {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  font-size: 1.2rem;
+}
+/* Input Field Styling */
+input[type="text"], input[type="email"], textarea {
+  margin: 0 0 1em;
+  border: 1px solid #ccc;
+  outline: none;
+}
+/* Textarea Styling */
+textarea {
+  height: 6em;
+}
+/* Button Styling */
+input[type="submit"], button {
+  background:#000;
+  color: #fff;
+  cursor: pointer;
+}
+/* Button Hover Styling */
+input[type="submit"]:hover, button:hover {
+  background: #000;
+}
